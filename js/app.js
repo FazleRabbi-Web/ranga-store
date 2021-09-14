@@ -22,8 +22,8 @@ const showProducts = (products) => {
      <p>Rating : <span id="rating"><i class="fas fa-star"></i>${product.rating.rate}</span> (${product.rating.count})</p>
      <h3 class="fw-bold">Price: $${product.price}</h3>
      <div class="d-flex justify-content-between">
-     <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="btn fw-bold card-btn">Add To Cart</button>
-     <button id="details-btn" class="btn fw-bold card-btn ">Details</button>
+     <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="btn fw-bold ">Add To Cart</button>
+     <button id="details-btn" class="btn fw-bold  ">Details</button>
      </div>
      </div>
       </div>

@@ -1,7 +1,7 @@
 /* full page background color set */
 
 body {
-  background-color: rgb(255, 255, 255) !important;
+  background-color: #ffffff !important;
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
@@ -24,8 +24,9 @@ body {
   border: 0;
   padding: 0px 40px;
   margin-left: 3px;
-  background-color: #ff8aaf;
+  background-color: #ffd9e5;
   color: rgb(0, 0, 0);
+  transition: 0.3s;
 }
 #search-btn:hover{
   background-color: #e30047;
@@ -73,7 +74,7 @@ body {
 /* Single product card design */
 
 .single-product {
-  background-color: #ffffff;
+  background-color: #f2f4f8;
   min-height: 575px;
   padding: 15px;
   margin-top: 15px;
@@ -83,7 +84,7 @@ body {
   box-shadow: 0px 0px 5px rgb(109, 109, 109);
 }
 .single-product:hover{
-  background-color: #ff8aaf;
+  background-color: #ffd9e5;
   border-radius: 10px;
 }
 
@@ -91,42 +92,51 @@ body {
 
 #rating{
   color: #ffbe5b;
+  transition: 0.3s;
 }
 
 .single-product:hover #rating{
-  color: rgb(255, 240, 23);
+  color: rgb(158, 148, 0);
 
 }
 
 /* product card button design */
 
-.single-product .card-btn{
+.single-product #addToCart-btn{
   background-color: #e30047;
   color: rgb(255, 255, 255);
+  border: 2px solid #e30047;
   padding: 5px 20px;
   margin-top: 10px;
   transition: 0.3s;
 }
-#details-btn{
-  background-color: #ff8aaf;
-  color: #000000 !important;
-  padding: 0px 40px !important;
-  transition: 0s !important;
-}
 
-.single-product:hover #details-btn{
+.single-product:hover #addToCart-btn:hover{
+  background-color: white ;
+  color: #e30047 ;
   border: 2px solid #000000;
 }
 
-.single-product:hover #details-btn:hover{
-  background-color: #00b7ff!important;
-  border: 0;
+#details-btn{
+  background-color: #ffd9e5;
+  color: #000000 ;
+  border: 2px solid #ffd9e5;
+  margin-top: 10px;
+  padding: 0px 25px;
+  transition: .3s;
 }
 
-.single-product:hover .btn:hover{
-  background-color: white !important;
-  color: #e30047 !important;
+.single-product:hover #details-btn{
+  border: 2px solid #000000 ;
 }
+
+.single-product:hover #details-btn:hover{
+  background-color: #00b7ff;
+  border: 2px solid #00b7ff ;
+}
+
+/* card image size */
+
 .product-image {
   width: 300px;
   height: 300px;
